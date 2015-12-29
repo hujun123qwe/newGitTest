@@ -47,15 +47,16 @@ h1{
 /*body*/
 #body, #body .content{
     /*border: dashed 1px darkblue;*/
-    height: 600px;
+    height: 700px;
 }
 #body{
-    background-image: url("../img/hero.jpg");
+    background-image: url("../img/uav5.jpg");
 }
 #body .content{
     text-align: center;
     line-height: 600px;
     color: snow;
+    font-size: 200px;
 }
 
 /*footer*/
@@ -68,32 +69,93 @@ h1{
 #footer .copyright{
     float: left;
     width: 45%;
+    text-align: center;
+}
+#footer .copyright p:nth-child(1){
+    padding-top: 12px;
 }
 #footer .contact{
     float: left;
     width: 35%;
+    text-align: center;
 }
 #footer .follow{
     float: right;
     width: 17%;
 }
-#footer .copyright .content{
-    width: inherit;
-    height: auto;
-    margin:20px 0px 20px 50px;
-}
-#footer .contact{
-    height: auto;
-    margin: 20px 0px 20px 10px;
-}
 #footer .contact .link-list{
     float: left;
     margin-right: 80px;
+    padding-top: 18px;
+}
+@media (max-width: 1135px){
+    #footer .contact .link-list{
+        margin-right: 50px;
+    }
+}
+@media (max-width: 780px){
+    h1{
+        font-size: 100px;
+    }
+    #body, #body .content{
+        /*border: dashed 1px darkblue;*/
+        width: 90%;
+        height: 384px;
+    }
+    #body{
+        background-image: url("../img/uav5-1.jpg");
+    }
+    #footer .copyright p{
+        font-size: 11px;
+    }
+    #footer .copyright p:nth-child(1){
+        padding-top: 20px;
+    }
+    #footer .contact .link-list{
+        margin-right: 10px;
+    }
+}
+@media (max-width: 488px){
+    #header, #body, #footer{
+        width: 480px;
+        box-shadow: 0 2px 6px 0 rgba(0,0,0,0.5);
+        margin-bottom: 8px;
+
+    }
+    #body{
+        background-image: url("../img/uav5-2.jpg");
+        height: 264px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    #body .content{
+        text-align: center;
+        line-height: 260px;
+        margin: 0px auto;
+    }
+    #footer{
+        height: 400px;
+    }
+    #footer .copyright p{
+        font-size: 11px;
+    }
+    #footer .contact{
+        text-align: center;
+        padding-left: 35%;
+    }
+    #footer .contact .link-list{
+        margin-right: 10px;
+    }
+    #footer .copyright, #footer .contact, #footer .follow{
+        width: 480px;
+        float: none;
+    }
 }
 #footer .contact .link-list a{
     color: #a6acaa;
     display: block;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 200;
     line-height: 21px;
     text-decoration: none;

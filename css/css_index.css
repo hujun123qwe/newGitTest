@@ -1,6 +1,7 @@
 *{
     margin:0px auto;
     padding:0px;
+    font-family: "Microsoft YaHei UI","微软雅黑";
 }
 h1{
     font-size: 200px;
@@ -139,6 +140,9 @@ h1{
         background-image: url("../img/uav5-2.jpg");
         height: 264px;
     }
+    #header .menu:checked .gn-menu{
+        display: block;
+    }
     h1{
         font-size: 50px;
     }
@@ -218,4 +222,24 @@ h1{
     height: 36px;
     line-height: 36px;
     white-space: nowrap;
+}
+
+
+/*about*/
+#about-container{
+    width: 98%;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.5);
+    margin-bottom: 8px;
+    background-image: url("../img/soon.jpg");
+    height: 718px;
+    overflow: hidden;
+}
+@media (max-width: 488px) {
+    #about-container{
+        box-shadow: 0 2px 6px 0 rgba(0,0,0,0.5);
+        margin-bottom: 8px;
+        background-image: url("../img/soon.jpg");
+        background-position: -550px;
+        background-repeat: no-repeat;
+    }
 }

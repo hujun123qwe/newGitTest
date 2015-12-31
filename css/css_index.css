@@ -3,10 +3,16 @@
     padding:0px;
     font-family: "Microsoft YaHei UI","微软雅黑";
 }
-h1{
-    font-size: 200px;
+.navbar{
+    width: 98%;
+    height: 60px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.5);
 }
-#header, #body, #footer{
+.navbar .navbar-right{
+    padding-top: 5px;
+}
+#header, #body, .container-fluid{
     width: 98%;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.5);
     margin-bottom: 8px;
@@ -44,200 +50,30 @@ h1{
 #header .menu:hover .gn-menu{
     display: block;
 }
-
-/*body*/
-#body, #body .content{
-    /*border: dashed 1px darkblue;*/
-    height: 700px;
-}
-#body{
-    background-image: url("../img/uav5.jpg");
-}
-#body .content{
-    text-align: center;
-    line-height: 600px;
-    color: snow;
-    font-size: 200px;
-}
-
 /*footer*/
-#footer, #footer .copyright,#footer .contact,#footer .follow{
-    /*border: dashed 1px red;*/
-    height: 110px;
+.container-fluid{
     background-color: #2c3e50;
     color: rgba(255,255,255,0.5);
 }
-#footer .copyright{
-    float: left;
-    width: 45%;
-    text-align: center;
-    padding-top: 12px;
-}
-#footer .contact{
-    float: left;
-    width: 35%;
-    text-align: center;
-}
-#footer .follow{
-    float: right;
-    width: 17%;
-}
-#footer .contact .link-list{
-    float: left;
-    margin-right: 80px;
-    padding-top: 18px;
-}
-@media (min-width: 1369px) {
-    #body{
-        background-image: url("../img/uav3.jpg");
-    }
-    #body, #body .content{
-        height: 1080px;
-    }
-    #body .content{
-        line-height: 1000px;
-    }
-}
-@media (max-width: 1135px){
-    #footer .contact .link-list{
-        margin-right: 50px;
-    }
-}
-@media (max-width: 780px){
-    h1{
-        font-size: 100px;
-    }
-    #body, #body .content{
-        /*border: dashed 1px darkblue;*/
-        width: 90%;
-        height: 384px;
-    }
-    #body{
-        background-image: url("../img/uav5-1.jpg");
-    }
-    #footer .copyright p{
-        font-size: 11px;
-    }
-    #footer .copyright p:nth-child(1){
-        padding-top: 20px;
-    }
-    #footer .contact .link-list{
-        margin-right: 10px;
-    }
-}
-@media (max-width: 488px){
-    #header, #body, #footer{
-        width: 480px;
-        box-shadow: 0 2px 6px 0 rgba(0,0,0,0.5);
-        margin-bottom: 8px;
-    }
-    #header .menu{
-        margin-right: 1px;
-    }
-    #body{
-        background-image: url("../img/uav5-2.jpg");
-        height: 264px;
-    }
-    #header .menu:checked .gn-menu{
-        display: block;
-    }
-    h1{
-        font-size: 50px;
-    }
-    #body .content{
-        clear: both;
-        text-align: center;
-        line-height: 264px;
-    }
-    #footer{
-        height: 400px;
-        overflow: hidden;
-    }
-    #footer .copyright p{
-        font-size: 11px;
-    }
-    #footer .contact{
-        text-align: center;
-        padding-left: 35%;
-    }
-    #footer .contact .link-list{
-        margin-right: 10px;
-    }
-    #footer .copyright, #footer .contact, #footer .follow{
-        width: 480px;
-        float: none;
-    }
-}
-#footer .contact .link-list a{
+
+.row a{
     color: #a6acaa;
-    display: block;
     font-size: 12px;
     font-weight: 200;
     line-height: 21px;
     text-decoration: none;
 }
-#footer .contact .link-list a:hover{
+.row a:hover{
     color: white;
 }
-#footer .follow .content{
+.container-fluid img{
     margin-top: 5px;
     margin-right: 1px;
     text-align: center;
 }
 
-.gn-menu {
-    width: 100px;
-    text-align: center;
-    background-color: #ffffff;
-    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.5);
-}
-.ul-menu{
-    list-style: none;
-}
-.ul-menu li{
-    border: 0 none;
-    font-family: inherit;
-    font-style: inherit;
-    font-weight: inherit;
-    margin: 0;
-    outline: 0 none;
-    padding: 0;
-}
-.ul-menu li:hover{
-    background-color: darkgrey;
-    color: #ffffff;
-}
-.ul-menu li:hover a{
-    background-color: darkgrey;
-    color: #ffffff;
-}
-.ul-menu a{
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.7);
-    color: #979797;
-    font-size: 16px;
-    font-weight: 400;
-    height: 36px;
-    line-height: 36px;
-    white-space: nowrap;
-}
-
-
-/*about*/
-#about-container{
-    width: 98%;
-    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.5);
-    margin-bottom: 8px;
-    background-image: url("../img/soon.jpg");
-    height: 718px;
-    overflow: hidden;
-}
-@media (max-width: 488px) {
-    #about-container{
-        box-shadow: 0 2px 6px 0 rgba(0,0,0,0.5);
-        margin-bottom: 8px;
-        background-image: url("../img/soon.jpg");
-        background-position: -550px;
-        background-repeat: no-repeat;
+@media (max-width: 768px){
+    .col-sm-12 .container{
+        text-align: center;
     }
 }

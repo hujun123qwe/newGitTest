@@ -71,8 +71,6 @@ h1{
     float: left;
     width: 45%;
     text-align: center;
-}
-#footer .copyright p:nth-child(1){
     padding-top: 12px;
 }
 #footer .contact{
